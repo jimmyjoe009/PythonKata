@@ -18,7 +18,6 @@ def reverseArray(a):
     b=a.copy()
     for i in range(len(a)):
         b[i]=a[len(a)-i-1]
-        b[len(a)-i-1]=a[i]
     return(b)
 
 if __name__ == '__main__':
