@@ -53,3 +53,21 @@ def traverse(root):
 
 # Run the traversal to print the numbers in order
 traverse(root)
+
+# A function that returns the maximum depth of a given binary tree
+def depth2(root):
+    a=0
+    b=0
+    if (root is None):
+        return(0)
+    if (root.left):
+        a=depth2(root.left)+1
+    if (root.right):
+        b=depth2(root.right)+1
+    if ((root.left is None) & (root.right is None)):
+        return(1)
+    else:
+        return(max(a,b))
+
+levels=depth2(root)
+print(levels)
