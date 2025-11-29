@@ -16,6 +16,7 @@ def maxstr(longstr):
         else:
             current=c
             mymap=set()
+            mymap.add(c)
     return(biggest)
 
 print(maxstr("abcabcbbholygrail"))
