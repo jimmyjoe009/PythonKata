@@ -8,3 +8,12 @@ def is_isogram(string):
         if (mystr.count(char)>1):
             return False
     return True
+
+# More efficient version with reduced complexity
+def is_isogram2(string):
+    the_set=set(string)
+    return(len(string)==len(the_set))
+
+test_string="abcdeff"
+print(is_isogram(test_string))
+print(is_isogram2(test_string))
