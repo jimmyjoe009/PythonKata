@@ -20,6 +20,11 @@ def reverseArray(a):
         b[i]=a[len(a)-i-1]
     return(b)
 
+# Other way to do it (Python specific)
+def reverseArray2(a):
+    return(a[::-1])
+
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
